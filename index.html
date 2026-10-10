@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Xp Group Inc. | Automotive & Services</title>
+  <meta name="description" content="The Xp Group Inc. offers automotive services, mobile mechanic services, car wash and detailing, and plumbing.">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #20242b;
+      background: #f5f7fa;
+      line-height: 1.6;
+    }
+    header {
+      background: #101820;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+    .logo { font-size: 25px; font-weight: bold; }
+    .logo span { color: #ff6b21; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; font-size: 14px; }
+    nav a:hover { color: #ff8a50; }
+    .hero {
+      background: linear-gradient(135deg, #101820, #263b4b);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+    .hero h1 { font-size: clamp(34px, 6vw, 58px); margin: 0 0 15px; }
+    .hero h1 span { color: #ff6b21; }
+    .hero p { max-width: 680px; margin: 0 auto 28px; font-size: 18px; }
+    .button {
+      display: inline-block;
+      background: #ff6b21;
+      color: white;
+      padding: 12px 23px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section { padding: 60px 7%; }
+    .section-title { text-align: center; margin-bottom: 35px; }
+    .section-title h2 { font-size: 32px; margin-bottom: 8px; }
+    .section-title p { color: #657080; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 22px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 27px;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,.06);
+    }
+    .card .symbol { font-size: 35px; }
+    .card h3 { margin-top: 8px; }
+    .card a { color: #d94f0b; font-weight: bold; text-decoration: none; }
+    .packages { background: #e9edf2; }
+    .price { font-size: 29px; font-weight: bold; color: #d94f0b; }
+    .contact {
+      background: #101820;
+      color: white;
+      text-align: center;
+    }
+    .contact p { color: #d5dce4; }
+    .contact .button { margin-top: 12px; }
+    footer {
+      background: #0a1015;
+      color: #bfc8d1;
+      text-align: center;
+      padding: 22px 15px;
+      font-size: 13px;
+    }
+    @media (max-width: 600px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; }
+      .hero { padding: 65px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">THE <span>XP</span> GROUP</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#automotive">Automotive</a>
+    <a href="#detailing">Detailing</a>
+    <a href="#plumbing">Plumbing</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <h1>Welcome to <span>The Xp Group</span></h1>
+    <p>Practical service solutions for your vehicle and property. Explore our automotive, cleaning, and plumbing services.</p>
+    <a class="button" href="#services">Explore Our Services</a>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h2>Our Services</h2>
+      <p>One group. Multiple services. Focused on customer care.</p>
+    </div>
+    <div class="cards">
+      <article class="card" id="automotive">
+        <div class="symbol">🔧</div>
+        <h3>XP Automotive</h3>
+        <p>Mobile mechanic services, vehicle maintenance, diagnostics, and general repairs.</p>
+        <a href="#contact">Ask about service →</a>
+      </article>
+      <article class="card" id="detailing">
+        <div class="symbol">🚘</div>
+        <h3>Car Wash & Detailing</h3>
+        <p>Vehicle cleaning and detailing options to help keep your car looking its best.</p>
+        <a href="#packages">View packages →</a>
+      </article>
+      <article class="card" id="plumbing">
+        <div class="symbol">🔩</div>
+        <h3>XP Plumbing</h3>
+        <p>Plumbing service enquiries for homes and businesses. Service availability and licensing requirements may vary.</p>
+        <a href="#contact">Contact us →</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="packages" id="packages">
+    <div class="section-title">
+      <h2>Car Wash & Detailing Packages</h2>
+      <p>Example starting packages — confirm the final price and service details before booking.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <h3>Basic</h3>
+        <div class="price">$60</div>
+        <p>Estimated time: 20–45 minutes</p>
+        <p>A basic vehicle cleaning package.</p>
+        <a href="#contact">Ask about Basic →</a>
+      </article>
+      <article class="card">
+        <h3>Complete</h3>
+        <div class="price">$150</div>
+        <p>Estimated time: 1–1.75 hours</p>
+        <p>A more thorough interior and exterior cleaning.</p>
+        <a href="#contact">Ask about Complete →</a>
+      </article>
+      <article class="card">
+        <h3>Premium</h3>
+        <div class="price">$250</div>
+        <p>Estimated time: 1.75–3 hours</p>
+        <p>An enhanced detailing package for customers wanting extra attention.</p>
+        <a href="#contact">Ask about Premium →</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">
+      <h2>About The Xp Group Inc.</h2>
+      <p>Our goal is to build a dependable service company with a professional customer experience. Contact us to discuss your needs, service area, and availability.</p>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <p>Have a question or want to ask about a service?</p>
+    <p>Email: Add your business email address</p>
+    <p>Service area: Add your city or service area</p>
+    <a class="button" href="mailto:">Email Us</a>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 The Xp Group Inc. All rights reserved.</p>
+  <p>Service details, prices, and availability should be confirmed before booking.</p>
+</footer>
+
+</body>
+</html>
